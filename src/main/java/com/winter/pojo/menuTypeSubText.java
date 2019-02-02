@@ -1,4 +1,4 @@
-package com.winter.model;
+package com.winter.pojo;
 
 public class menuTypeSubText {
     private int id;

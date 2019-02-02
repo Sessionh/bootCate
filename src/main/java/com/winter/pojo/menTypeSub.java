@@ -1,9 +1,9 @@
-package com.winter.model;
+package com.winter.pojo;
 
-public class menuType {
+public class menTypeSub {
     private int id;
     private String name;
-    private int subId;
+    private int menuTypeId;
 
     public int getId() {
         return id;
@@ -21,20 +21,20 @@ public class menuType {
         this.name = name;
     }
 
-    public int getSubId() {
-        return subId;
+    public int getMenuTypeId() {
+        return menuTypeId;
     }
 
-    public void setSubId(int subId) {
-        this.subId = subId;
+    public void setMenuTypeId(int menuTypeId) {
+        this.menuTypeId = menuTypeId;
     }
 
     @Override
     public String toString() {
-        return "menuType{" +
+        return "menTypeSub{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", subId=" + subId +
+                ", menuTypeId=" + menuTypeId +
                 '}';
     }
 }

@@ -1,7 +1,7 @@
 package com.winter.Base;
 
-import com.winter.mapper.UserMapper;
-import com.winter.model.User;
+import com.winter.dao.UserMapper;
+import com.winter.pojo.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;

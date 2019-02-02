@@ -1,7 +1,7 @@
 package com.winter.ServiceTest;
 
-import com.winter.mapper.menuTypeMapper;
-import com.winter.model.menuType;
+import com.winter.dao.menuTypeMapper;
+import com.winter.pojo.menuType;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;

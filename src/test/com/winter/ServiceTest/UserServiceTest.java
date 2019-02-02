@@ -1,6 +1,6 @@
 package com.winter.ServiceTest;
 
-import com.winter.model.User;
+import com.winter.pojo.User;
 import com.winter.service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
