@@ -1,6 +1,6 @@
 package com.winter.Base;
 
-import com.winter.dao.UserMapper;
+import com.winter.dao.UserDao;
 import com.winter.pojo.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -10,12 +10,13 @@ import org.springframework.test.context.junit4.SpringRunner;
 import javax.annotation.Resource;
 import java.util.List;
 
+
 @RunWith(SpringRunner.class)
 @SpringBootTest()
 public class UserMapperTest {
 
     @Resource
-    private UserMapper um;
+    private UserDao um;
 
     @Test
     public void  getListUser(){

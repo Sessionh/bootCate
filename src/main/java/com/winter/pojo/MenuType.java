@@ -1,6 +1,6 @@
 package com.winter.pojo;
 
-public class menuType {
+public class MenuType {
     private int id;
     private String name;
     private int subId;
@@ -31,7 +31,7 @@ public class menuType {
 
     @Override
     public String toString() {
-        return "menuType{" +
+        return "MenuType{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", subId=" + subId +

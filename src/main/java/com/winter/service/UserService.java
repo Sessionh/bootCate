@@ -1,6 +1,6 @@
 package com.winter.service;
 
-import com.winter.pojo.user;
+import com.winter.pojo.User;
 
 import java.util.List;
 
@@ -8,5 +8,5 @@ import java.util.List;
 public interface UserService {
 
 
-    List<user> findAllUser(int pageNum, int pageSize);
+    List<User> findAllUser(int pageNum, int pageSize);
 }

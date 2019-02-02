@@ -1,6 +1,6 @@
 package com.winter.pojo;
 
-public class user {
+public class User {
     private Integer id;
     private String alias;
     private String name;
@@ -94,7 +94,7 @@ public class user {
 
     @Override
     public String toString() {
-        return "user{" +
+        return "User{" +
                 "id=" + id +
                 ", alias='" + alias + '\'' +
                 ", name='" + name + '\'' +

@@ -1,6 +1,6 @@
 package com.winter.pojo;
 
-public class menTypeSub {
+public class MenTypeSub {
     private int id;
     private String name;
     private int menuTypeId;
@@ -31,7 +31,7 @@ public class menTypeSub {
 
     @Override
     public String toString() {
-        return "menTypeSub{" +
+        return "MenTypeSub{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", menuTypeId=" + menuTypeId +

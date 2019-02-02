@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.winter.dao.userDao">
-  <resultMap id="BaseResultMap" type="com.winter.pojo.user">
+<mapper namespace="com.winter.dao.UserDao">
+  <resultMap id="BaseResultMap" type="com.winter.pojo.User">
     <id column="user_id" jdbcType="INTEGER" property="userId" />
     <result column="user_name" jdbcType="VARCHAR" property="userName" />
     <result column="password" jdbcType="VARCHAR" property="password" />
@@ -10,13 +10,13 @@
   <sql id="Base_Column_List">
     id, alias, name, passwd,email,phoneNumber,wechat,cancel,deptId,role
   </sql>
-  <select id="selectAllUser"  resultType="com.winter.pojo.user">
+  <select id="selectAllUser"  resultType="com.winter.pojo.User">
     select 
     <include refid="Base_Column_List" />
     from users
   </select>
 
-  <select id="selectSetUser" resultType="com.winter.pojo.user">
+  <select id="selectSetUser" resultType="com.winter.pojo.User">
     select * from users where id = 2
   </select>
 

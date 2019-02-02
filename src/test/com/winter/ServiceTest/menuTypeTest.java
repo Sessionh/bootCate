@@ -1,7 +1,7 @@
 package com.winter.ServiceTest;
 
-import com.winter.dao.menuTypeMapper;
-import com.winter.pojo.menuType;
+import com.winter.dao.MenuTypeDao;
+import com.winter.pojo.MenuType;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -14,11 +14,11 @@ import java.util.List;
 @SpringBootTest()
 public class menuTypeTest {
     @Resource
-    private menuTypeMapper mt;
+    private MenuTypeDao mt;
 
     @Test
     public void getListMenuType() {
-        List<menuType> list =  mt.getListMenuType();
+        List<MenuType> list =  mt.getListMenuType();
         System.out.print(list.toString());
     }
 }
