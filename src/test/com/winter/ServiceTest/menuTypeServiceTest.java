@@ -1,25 +1,23 @@
 package com.winter.ServiceTest;
 
-import com.winter.dao.MenuTypeDao;
-import com.winter.pojo.MenTypeSub;
-import com.winter.pojo.MenuType;
+import com.winter.service.MenuTypeService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
-import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest()
-public class menuTypeTest {
+public class menuTypeServiceTest {
     @Resource
-    private MenuTypeDao mt;
+    private MenuTypeService ms;
 
     @Test
     public void getListMenuType() {
-        List<MenuType> list =  mt.getListMenuType();
-        System.out.print(list.toString());
+        ms.getListMenuType();
+
     }
+
 }

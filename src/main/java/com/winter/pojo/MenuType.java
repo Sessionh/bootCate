@@ -5,7 +5,7 @@ import java.util.List;
 public class MenuType {
     private int id;
     private String name;
-    private List<MenuTypeSubText> subId;
+    private List<MenuTypeSubText> subs;
 
     public int getId() {
         return id;
@@ -23,12 +23,12 @@ public class MenuType {
         this.name = name;
     }
 
-    public List<MenuTypeSubText> getSubId() {
-        return subId;
+    public List<MenuTypeSubText> getSubs() {
+        return subs;
     }
 
-    public void setSubId(List<MenuTypeSubText> subId) {
-        this.subId = subId;
+    public void setSubs(List<MenuTypeSubText> subs) {
+        this.subs = subs;
     }
 
     @Override
@@ -36,7 +36,7 @@ public class MenuType {
         return "MenuType{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", subId=" + subId +
+                ", subs=" + subs +
                 '}';
     }
 }

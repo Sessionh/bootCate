@@ -5,24 +5,24 @@
 
 
     <select id="getListMenuType" resultMap="menuTypeMap">
-        select id, name, subId from menu_type
+        select id, name, subId from menu_type order by id
     </select>
     
     <resultMap id="menuTypeMap" type="com.winter.pojo.MenuType">
         <id property="id" column="id"/>
-        <collection property="subId" ofType="com.winter.pojo.MenTypeSub" column="id" select="getListMenuTypeSub"/>
+        <collection property="subs" ofType="com.winter.pojo.MenTypeSub" column="id" select="getListMenuTypeSub"/>
     </resultMap>
 
-    <select id="getListMenuTypeSub"  resultMap="menuTypeSubMap">
-        select s.id, s.title from menu_type_sub s, menu_type mt where s.menuTypeId = mt.id
+    <select id="getListMenuTypeSub" parameterType="int" resultMap="menuTypeSubMap">
+        select id, title from menu_type_sub where menuTypeId = #{id}
     </select>
 
     <resultMap id="menuTypeSubMap" type="com.winter.pojo.MenTypeSub">
         <id property="id" column="id"/>
         <collection property="menuTypeSubText" ofType="com.winter.pojo.MenuTypeSubText" column="id" select="getListMenuTypeSubText"/>
     </resultMap>
-    <select id="getListMenuTypeSubText"  resultType="com.winter.pojo.MenuTypeSubText">
-        select s.id, s.name from menu_type_sub_text s, menu_type_sub t where t.id = s.uId
+    <select id="getListMenuTypeSubText" parameterType="int"  resultType="com.winter.pojo.MenuTypeSubText">
+        select id, name from menu_type_sub_text  where uId = #{id}
     </select>
     
 

@@ -34,8 +34,7 @@ create table `menu_type_sub` (
 insert into `menu_type_sub` values(1, '热门食材', 1);
 insert into `menu_type_sub` values(2, '家常菜', 1);
 insert into `menu_type_sub` values(3, '下饭菜', 1);
-insert into `menu_type_sub` values(4, '快手菜', 1);
-insert into `menu_type_sub` values(5, '减肥食谱', 1);
+insert into `menu_type_sub` values(4, '减肥食谱', 1);
 
 
 
@@ -68,5 +67,33 @@ insert into `menu_type_sub_text` values(13, '鱼香肉丝', 2);
 insert into `menu_type_sub_text` values(14, '红烧排骨', 2);
 insert into `menu_type_sub_text` values(15, '油焖大虾', 2);
 insert into `menu_type_sub_text` values(16, '清蒸鲈鱼', 2);
-insert into `menu_type_sub_text` values(17, '宫保鸡丁', 2);
-insert into `menu_type_sub_text` values(18, '家常菜', 2);
+insert into `menu_type_sub_text` values(18, '酸菜鱼', 2);
+
+insert into `menu_type_sub_text` values(19, '家常菜', 3);
+insert into `menu_type_sub_text` values(20, '宫保鸡丁', 3);
+insert into `menu_type_sub_text` values(21, '糖醋里脊', 3);
+insert into `menu_type_sub_text` values(22, '年夜饭', 3);
+insert into `menu_type_sub_text` values(23, '京酱肉丝', 3);
+insert into `menu_type_sub_text` values(24, '水煮肉片', 3);
+insert into `menu_type_sub_text` values(25, '麻婆豆腐', 3);
+insert into `menu_type_sub_text` values(26, '锅包肉', 3);
+
+
+insert into `menu_type_sub_text` values(28, '沙拉', 4);
+insert into `menu_type_sub_text` values(29, '薏米', 4);
+insert into `menu_type_sub_text` values(30, '红豆', 4);
+insert into `menu_type_sub_text` values(31, '芹菜', 4);
+insert into `menu_type_sub_text` values(32, '冬瓜', 4);
+insert into `menu_type_sub_text` values(33, '黄瓜', 4);
+insert into `menu_type_sub_text` values(34, '番茄', 4);
+insert into `menu_type_sub_text` values(35, '生菜', 4);
+insert into `menu_type_sub_text` values(36, '西兰花', 4);
+insert into `menu_type_sub_text` values(37, '卷心菜', 4);
+insert into `menu_type_sub_text` values(38, '苦瓜', 4);
+insert into `menu_type_sub_text` values(39, '馒头', 4);
+insert into `menu_type_sub_text` values(41, '饺子', 4);
+insert into `menu_type_sub_text` values(42, '烤红薯', 4);
+insert into `menu_type_sub_text` values(43, '宝宝辅食', 4);
+insert into `menu_type_sub_text` values(44, '鲫鱼豆腐汤', 4);
+insert into `menu_type_sub_text` values(46, '鲫鱼汤', 4);
+
