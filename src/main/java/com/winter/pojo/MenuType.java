@@ -1,9 +1,11 @@
 package com.winter.pojo;
 
+import java.util.List;
+
 public class MenuType {
     private int id;
     private String name;
-    private int subId;
+    private List<MenuTypeSubText> subId;
 
     public int getId() {
         return id;
@@ -21,11 +23,11 @@ public class MenuType {
         this.name = name;
     }
 
-    public int getSubId() {
+    public List<MenuTypeSubText> getSubId() {
         return subId;
     }
 
-    public void setSubId(int subId) {
+    public void setSubId(List<MenuTypeSubText> subId) {
         this.subId = subId;
     }
 

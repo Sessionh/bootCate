@@ -2,7 +2,7 @@ package com.winter.pojo;
 
 public class MenuTypeSubText {
     private int id;
-    private String title;
+    private String name;
     private int uId;
 
     public int getId() {
@@ -13,12 +13,12 @@ public class MenuTypeSubText {
         this.id = id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getuId() {
@@ -33,7 +33,7 @@ public class MenuTypeSubText {
     public String toString() {
         return "MenuTypeSubText{" +
                 "id=" + id +
-                ", title='" + title + '\'' +
+                ", name='" + name + '\'' +
                 ", uId=" + uId +
                 '}';
     }

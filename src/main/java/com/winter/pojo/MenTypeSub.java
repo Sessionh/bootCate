@@ -1,9 +1,11 @@
 package com.winter.pojo;
 
+import java.util.List;
+
 public class MenTypeSub {
     private int id;
-    private String name;
-    private int menuTypeId;
+    private String title;
+    private List<MenuTypeSubText> menuTypeSubText;
 
     public int getId() {
         return id;
@@ -13,28 +15,28 @@ public class MenTypeSub {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public int getMenuTypeId() {
-        return menuTypeId;
+    public List<MenuTypeSubText> getMenuTypeSubText() {
+        return menuTypeSubText;
     }
 
-    public void setMenuTypeId(int menuTypeId) {
-        this.menuTypeId = menuTypeId;
+    public void setMenuTypeSubText(List<MenuTypeSubText> menuTypeSubText) {
+        this.menuTypeSubText = menuTypeSubText;
     }
 
     @Override
     public String toString() {
         return "MenTypeSub{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
-                ", menuTypeId=" + menuTypeId +
+                ", title='" + title + '\'' +
+                ", menuTypeSubText=" + menuTypeSubText +
                 '}';
     }
 }
